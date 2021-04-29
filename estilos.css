@@ -1,0 +1,100 @@
+body{
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: darkgray;
+}
+.caja{
+    width: 200px;
+    height: 250px;
+    border: 1px solid rgb(96, 22, 131);
+    margin: 5px;
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: stretch;
+    padding: 5px;
+    margin-top: 30px;
+    /**/
+    
+}
+.caja p{
+    word-wrap: break-word;
+    display: inline-flex;
+    align-items: stretch;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.seleccionada{
+    background-color: rgb(96, 22, 131);
+    color: beige;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+}
+.seleccionada:hover{
+    filter: drop-shadow(0 10px 10px rgba(12, 1, 1, 0.87));
+}
+.seleccionada p{
+    color: beige;
+}
+div p{
+    color: rgb(96, 22, 131);
+    font-weight: bolder;
+    word-wrap: break-word;
+    display: inline-flex;
+}
+.caja img{
+    width: 200px;
+    height: 200px;
+}
+input{
+    width: 164px;
+    border-radius: 5px;
+    border: 1px solid rgb(96, 22, 131);
+}
+#btnAdd{
+    width: 170px;
+    height: 40px;
+    display: block;
+    margin-top: 10px;
+    font-weight: bolder;
+    filter: drop-shadow(0 2px 8px rgba(12, 1, 1, 0.87));
+    background-color: rgba(97, 22, 131, 0.719);
+    cursor: pointer;
+    color: beige;
+}
+/*IMG GRANDE*/
+.vistaGrande{
+    display: none;    
+}
+.activo{
+    background-color: rgba(31, 29, 29, 0.644);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: block;
+}
+#imgGrande{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#btnX{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+#cerrarImgGrande{
+    font-weight: bold;
+    color: black;
+    width: fit-content;
+    padding: 3px;
+    font-size: 1rem;
+}
+.oculto{
+    display: none;
+}
